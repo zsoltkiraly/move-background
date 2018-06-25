@@ -31,7 +31,8 @@ section {
     margin-top: 70px;
 
     @include full-absolute();
-
+    
+    height: calc(100% - 70px);
 
     .icon-icons {
       font-size: 55em;
