@@ -1,7 +1,7 @@
 # Move background v1.0.4
 
 <br />
-<a href="http://zsoltkiraly.com/developments/move-background/" target="_blank">DEMO PAGE</a>
+<a href="https://zsoltkiraly.com/developments/move-background/" target="_blank">DEMO PAGE</a>
 
 #
 <br />
