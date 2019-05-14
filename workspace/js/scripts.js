@@ -1,11 +1,32 @@
-'use scrict'
-
 /*
 Move background - Code by Zsolt Király
 v1.0.4 - 2018-06-25
 */
 
+'use strict';
 var moveBackground = function() {
+
+    function signatura() {
+        if (window['console']) {
+            const text = {
+                black: '%c     ',
+                blue: '%c   ',
+                author: '%c  Zsolt Király  ',
+                github: '%c  https://zsoltkiraly.com/'
+            }
+    
+            const style = {
+                black: 'background: #282c34',
+                blue: 'background: #61dafb',
+                author: 'background: black; color: white',
+                github: ''
+            }
+    
+            console.log(text.black + text.blue + text.author + text.github, style.black, style.blue, style.author, style.github);
+        }
+    }
+    
+    signatura();
 
     function app(c) {
 
@@ -22,7 +43,7 @@ var moveBackground = function() {
                 x += (lFollowX - x) * friction;
                 y += (lFollowY - y) * friction;
 
-                translate = 'translate(' + x + 'px, ' + y + 'px)';
+                var translate = 'translate(' + x + 'px, ' + y + 'px)';
 
                 var bg = moveArea.querySelector('.move-background');
 
